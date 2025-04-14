@@ -1,5 +1,5 @@
 
-//====== Part 2 ======//
+//====== Part 1 ======//
 
 
 // let arr1=['Pakistan','India','China','Bangladash']
