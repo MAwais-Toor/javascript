@@ -46,15 +46,27 @@ let firstnum1 = Number(prompt("Enter first number"))
 let secondnum2 = Number(prompt("Enter second number"))
 let thirdnum3 = Number(prompt("Enter third number"))
 
-if(firstnum1 < secondnum2 && firstnum1 < thirdnum3){
+if (firstnum1 < secondnum2 && firstnum1 < thirdnum3) {
     document.write(" first num is greatest")
 
-} else if (secondnum2 < firstnum1 && secondnum2 < thirdnum3){
+} else if (secondnum2 < firstnum1 && secondnum2 < thirdnum3) {
     document.write(" second num is greatest")
 
-}else{
+} else {
     document.write("Third is greatest ")
 }
+
+
+//=====table=====//
+let num = Number(prompt("Enter a number"))
+function table(p1) {
+    let i = 0;
+    while (i <= 10) {
+        document.write("<br>" + p1 + "x" + i + "=" + (p1 * i));
+        i++;
+    }
+}
+table(num);
 
 
 

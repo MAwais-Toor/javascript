@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in js</title>
+</head>
+
+<body>
+    <h1>Functions</h1>
+    <ul>
+        <li>Re-use able function</li>
+        <li>for short code</li>
+        <li>for maintain code</li>
+    </ul>
+    <h3>js output</h3>
+
+
+
+    <script>
+        // function name() {
+        //     document.write("hello world <br>")
+        //     console.log("hello world <br>")
+        //     alert("hello world <br>")
+        // }
+        // name();
+        // name();
+
+        // function name(p1, p2) { //parameters
+        //     document.write("hello world <br>" + p1 + " and " + p2)
+        //     console.log("hello world <br>" + p1 + " and " + p2)
+        //     alert("hello world with" + p1 + " and " + p2)
+        // }
+        // name( 45, 65); //arguments
+
+        // //===average  value===//
+        // let a = Number(prompt("Enter number"));
+        // let b = Number(prompt("Enter number"));
+        // let c = Number(prompt("Enter number"));
+
+        // function name(p1, p2, p3) { //parameters
+
+        //     document.write((p1 + p2 + p3) / 3)
+
+        // }
+        // name(a, b, c); //arguments
+
+        // ===greater  value===//
+        // let a = Number(prompt("Enter number"));
+        // let b = Number(prompt("Enter number"));
+        // let c = Number(prompt("Enter number"));
+
+        // function name(p1, p2, p3) { //parameters
+
+        //     if (p1 > p2 && p1 > p3) {
+        //         document.write(p1)
+        //     } else if (p2 > p1 && p2 > p3) {
+        //         document.write(p2)
+        //     } else {
+        //         document.write(p3)
+        //     }
+
+        // }
+        // name(a, b, c); //arguments
+
+
+
+        //==Function Return==//
+
+        // const ret = function (p1) {
+        //     return (p1 / 4);
+        // }
+        // const a = ret(20);
+        // document.write(a + "<br>")
+
+
+        //arrow function or fat arrow function
+
+        // const ret1 = p1 => {
+        //     document.write(p1 / 3 )
+        // }
+        // ret1(27)
+
+
+
+        //==dates==//
+        // let today = new Date();
+        // function date(p1) {
+        //     alert(today);
+        //     document.write(today);
+        // }
+        // date(today)
+
+        //==switch case==//
+        let day = 2;
+
+        function date(p1) {
+            switch (p1) {
+                case 1:
+                    document.write("Monday")
+                    break;
+                case 2:
+                    document.write("Tuesday")
+                    break;
+                case 3:
+                    document.write("Wednesday")
+                    break;
+                case 4:
+                    document.write("thursday")
+                    break;
+                case 5:
+                    document.write("Friday")
+                    break;
+                case 6:
+                    document.write("Saturday")
+                    break;
+                case 7:
+                    document.write("Sunday")
+                    break;
+
+                default:
+                    document.write("Its not a weekday")
+            }
+        }
+        date(day);
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
