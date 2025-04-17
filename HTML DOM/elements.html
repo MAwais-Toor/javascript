@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elements</title>
+</head>
+
+<body>
+    <!-- Stage 1 -->
+    <h1 id="heading"></h1>
+    <!-- stage 2 -->
+    <img id="image" alt="Git image">
+    <!-- stage3 -->
+    <p class="para">This is a para1</p>
+    <!-- Stage4 -->
+    <p class="para2">paragraph</p>
+
+
+    <script>
+        // stage1
+        // Difference b/w innerText and innerHTML
+        let head = document.getElementById("heading");
+
+        head.innerHTML = ("<p>Hello <b> World</b> </p>")//;read as a html elements
+        // head.innerText = ("<p>Hello <b>World</b></p>"); //read as a simple text
+
+        // stage2
+        let img = document.getElementById("image");
+
+        // example: head.setAttribute("KEY", "VALUE")
+        img.setAttribute("src", "https://github.githubassets.com/assets/profile-first-repo-dark-25579720acb4.svg")
+
+        //stage3
+        console.log(document.getElementsByTagName("p")[0].getAttribute("class"))
+
+        // stage4
+        let para = document.getElementsByClassName("para")
+
+        console.log(para.removeAttribute("class"))
+
+    </script>
+
+</body>
+
+</html>

@@ -1,36 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JS HTML DOM</title>
-  </head>
-  <body>
-    <h1 id="heading"></h1>
-    <h1></h1>
-    <!--2nd heading-->
-    <hr />
 
-    <p id="para1"></p>
-    <p>fe</p>
-    <p>fe</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS HTML DOM</title>
+</head>
 
-    <script>
-      let head = document.getElementById("heading");
-      head.innerHTML = " this is a first heading ";
-      // by id name
-      //   document.getElementById("heading").innerHTML = " this is a first heading ";
-      document.getElementById("para1").innerText = " This is a first paragraph";
+<body>
+  <h1 id="heading"></h1>
+  <h1></h1>
+  <!--2nd heading-->
+  <hr />
 
-      // by tag name
-      document.getElementsByTagName("h1")[1].innerHTML =
-        " This is a 2nd heading";
-      //   document.getElementsByTagName("h1")[1].style.backgroundColor="blue" //style
-      document.getElementsByTagName("p")[1].innerHTML =
-        " This is a 2nd paragraph";
+  <p id="para1"></p>
+  <p>fe</p>
+  <p>fe</p>
 
-      // by class name
-      document.getElementsByClassName("p")[2].style.background = "blue";
-    </script>
-  </body>
+  <script>
+    let head = document.getElementById("heading");
+    head.innerHTML = " this is a first heading ";
+    // by id name
+    //   document.getElementById("heading").innerHTML = " this is a first heading ";
+    document.getElementById("para1").innerText = " This is a first paragraph";
+
+
+    // by tag name
+    document.getElementsByTagName("h1")[1].innerHTML =
+      " This is a 2nd heading";
+    //   document.getElementsByTagName("h1")[1].style.backgroundColor="blue" //style
+    document.getElementsByTagName("p")[1].innerHTML =
+      " This is a 2nd paragraph";
+
+
+    // by class name
+    document.getElementsByClassName("p")[2].style.background = "blue";
+
+
+    // Query selecter
+    document.querySelector(".heading").innerHTML = "green";
+
+
+    // Query selecter All
+    document.querySelectorAll("#heading").innerHTML = "text change";
+
+
+
+
+  </script>
+</body>
+
 </html>
